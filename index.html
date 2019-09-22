@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Todo application" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Todos</title>
+</head>
+
+<body>
+    <h1>Task Manager</h1>
+    <div class="tasks-board">
+        <div id="lists"></div>
+        <div class="add-list">
+            <div id="trigger">
+                <p id="add-list-trigger"><span>&#43;</span>&nbsp;Add another list</p>
+            </div>
+            <div class="hide" id="add-list-target">
+                <input type="text" placeholder="Enter list name" id="new-list" />
+                <button class="add-list-btn">Add New List</button>
+                <button class="close-btn" id="hide-add-list">✕</button>
+            </div>
+        </div>
+    </div>
+    <div id="task-description-modal" class="modal">
+        <div class="modal-content">
+            <div class="task-title"></div>
+            <span class="close">&times;</span>
+            <h3 class="section-title">Description</p>
+            <div class="task-description">
+                <p class="task-description-para"></p>
+                <button id="edit-description-btn" class="edit-description">Edit</button>
+            </div>
+            <div class="add-task-description hide">
+                <textarea placeholder="Add task description" id='add-description-input'></textarea>
+                <button id="save-task-description">SAVE</button>
+                <button id="hide-task-description-input" class="close-btn">✕</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./utils/helper-functions.js"></script>
+</body>
+
+</html>
